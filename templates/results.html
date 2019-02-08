@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block body %}
+<body background-color=black>
+
+
+
+
+
+    <div id="grad1">
+    <h3 align='center'><b>Here is your Entity Relationship</b></h3>
+    <div id="textarea">
+    <h2>
+    	{% for key,value in result.items %}
+    	{{key}} - {{value}}<br>
+    	{% endfor %}
+
+    </h2><br>
+    <div align="center">
+    	<a href="https://pythonprogramming.net/natural-language-toolkit-nltk-part-speech-tagging/">Check out the POS code list here</a><br>
+    	<p>Or read the README.md file to know more about these POS codes</p>
+   		<a href="{% url 'home' %}">Try Again</a>
+   		<br><br><br>
+    </div>
+    </body>
+{% endblock %}

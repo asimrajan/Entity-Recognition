@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+<div id="grad1">
+    <h1 align="center"><b>I can recognize Name, Date, Organization, etc. from your text</b></h1>
+    <p align="center">Eg: Asim Rajan joined Google in 2015 and worked as a Data Analyst!</p>
+    <div id="textarea">
+    <form method="POST">
+		{% csrf_token %}
+        {{form}}
+        <br>
+    
+    <div align="center">
+    	<input type="submit" value="Run" style="background-color: #555555; border: none; color: white; padding: 15px 32px; text-align: center; display: inline-block; font-size: 16px">
+    </div>
+    </div><br><br><br><br><br><br><br><br>
+    </div>
+    
+{% endblock %}
