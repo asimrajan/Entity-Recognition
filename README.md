@@ -1,4 +1,5 @@
 ## Entity POS Recognition app is [deployed with wsgi server and hosted behind nginx on port 80](http://3.95.210.107/)
+   http://3.95.210.107/
 
 ## Install the following requirements :
 ```
